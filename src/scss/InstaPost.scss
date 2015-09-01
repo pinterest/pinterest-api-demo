@@ -1,0 +1,76 @@
+/*    INSTAGRAM POST    */
+$igImage: 290px;
+
+.InstaPost {
+    cursor: pointer;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    width: $igImage;
+
+    &:hover {
+        .overlay-wrapper {
+            visibility: visible;
+        }
+    }
+
+    .overlay-wrapper {
+        visibility: hidden;
+    }
+
+    .likes, .comments, .pin {
+        color: white;
+        margin: 0 auto;
+        position: absolute;
+        top: 10px;
+        width: 50px;
+
+        i {
+            background-size: cover;
+            content: '';
+            display: inline-block;
+            height: 12px;
+            margin-right: 7px;
+            width: 12px;
+        }
+    }
+
+    .likes {
+        left: 10px;
+
+        i {
+            background-image: url(http://i772.photobucket.com/albums/yy8/zackargyle/like_zpsq0dryf66.png);
+        }
+    }
+
+    .comments {
+        left: 65px;
+
+        i {
+            background-image: url(http://i772.photobucket.com/albums/yy8/zackargyle/comment_zpsxeuk0kcr.png);
+        }
+    }
+
+    .pin {
+        $pinWidth: 50px;
+
+        height: $pinWidth;
+        left: $igImage / 2 - $pinWidth / 2;
+        top:  $igImage / 2 - $pinWidth / 2;
+        width: $pinWidth;
+
+        i {
+            height: $pinWidth;
+            background-image: url(http://i772.photobucket.com/albums/yy8/zackargyle/pin_zpsquskimwq.png);
+            width: $pinWidth;
+        }
+    }
+
+    .overlay {
+        background-color: rgba(#000,.3);
+        height: $igImage;
+        position: absolute;
+        top: 0;
+        width: $igImage;
+    }
+}

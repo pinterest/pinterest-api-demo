@@ -1,0 +1,97 @@
+/*    BOARD PICKER    */
+$igImage: 290px;
+
+.BoardPicker {
+    align-items: center;
+    background-color: rgba(#000,.8);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+
+    .content {
+        background-color: #fff;
+        border-radius: 6px;
+        padding: 20px;
+        width: 700px;
+
+        header {
+            font-size: 25px;
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .close {
+            display: none;
+        }
+
+        .inline {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+        }
+
+        .imageWrapper {
+            width: 47%
+        }
+
+        .postImage, .boards {
+            box-shadow: 0px 1px 2px #585858;
+        }
+
+        .boards {
+            background-color: #fff;
+            overflow: scroll;
+            height: $igImage + 90;
+        }
+
+        .board {
+            border-bottom: 1px solid #eee;
+            cursor: pointer;
+            padding: 10px 10px 6px;
+            position: relative;
+            text-align: left;
+
+            span {
+                font-size: 13px;
+                font-weight: 600;
+                margin-left: 10px;
+            }
+
+            img {
+                border: 1px solid #E4E1E1;
+                border-radius: 3px;
+                vertical-align: middle;
+            }
+
+            &:hover {
+                background-color: #f6f6f6;
+
+                .button {
+                    display: block;
+                }
+            }
+        }
+
+        .note {
+            border: none;
+            box-shadow: 0px 1px 2px #585858;
+            font-size: 14px;
+            height: 90px;
+            padding: 5px;
+            resize: none;
+            width: $igImage;
+        }
+
+        .spinner {
+            position: absolute;
+            top: 11px;
+            right: 0px;
+        }
+    }
+}

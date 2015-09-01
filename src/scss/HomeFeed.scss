@@ -1,0 +1,54 @@
+/*    HOME FEED VIEW    */
+$igImage: 290px;
+
+.HomeFeed {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: ($igImage + 20) * 3;
+
+    .header {
+        height: 220px;
+        margin-bottom: 25px;
+        position: relative;
+        text-align: center;
+
+        .logout {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 0;
+        }
+
+        img {
+            border-radius: 50%;
+        }
+
+        h1, h3 {
+            margin: 2px;
+        }
+    }
+
+    > .spinner {
+        margin: 200px auto;
+    }
+
+    .load-more {
+        align-items: center;
+        border: 2px solid #4090db;
+        border-radius: 50%;
+        color: #4090db;
+        cursor: pointer;
+        display: flex;
+        font-size: 12px;
+        font-weight: 600;
+        height: 120px;
+        justify-content: center;
+        margin: 0 auto;
+        width: 120px;
+
+        &:hover {
+            border: 2px solid #A9D6FF;
+            color: #A9D6FF;
+        }
+    }
+}

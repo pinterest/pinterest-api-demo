@@ -1,0 +1,71 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', arial, sans-serif;
+}
+
+body {
+    background-color: #FAFAFA;
+    margin: 0;
+
+    &.noscroll {
+        overflow: hidden;
+    }
+}
+
+.button {
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    margin-top: 30px;
+    text-shadow: 0 -1px rgba(0,0,0,0.11);
+    width: 150px;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &:hover {
+        opacity: .9;
+    }
+}
+
+.button--pinterest {
+    background-color: #CE111A;
+    color: white;
+}
+
+.button--instagram {
+    background-color: #125688;
+    color: white;
+}
+
+.button--pinit {
+    background-color: #CE111A;
+    border: 1px solid #7B0F14;
+    border-radius: 3px;
+    color: #fff;
+    display: none;
+    height: auto;
+    margin-top: 8px;
+    padding: 6px 11px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: auto;
+}
+
+.image--pinterest {
+    background-image: url(http://i772.photobucket.com/albums/yy8/zackargyle/pinterest_zpsihz4bqev.png);
+    background-size: cover;
+    height: 90px;
+    width: 90px;
+}
+
+.image--instagram {
+    background-image: url(http://i772.photobucket.com/albums/yy8/zackargyle/instagram_zpscfshrqni.png);
+    background-size: cover;
+    height: 102px;
+    width: 103px;
+    margin: 4px auto !important;
+}

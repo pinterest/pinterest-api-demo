@@ -1,0 +1,138 @@
+.mobile {
+
+    .button--pinit {
+        font-size: 2.2rem;
+        padding: 18px 30px;
+        top: 20px;
+    }
+
+    .button--pinterest, .button--instagram {
+        border-radius: 5%;
+        font-size: 3rem;
+        height: auto;
+        padding: 2rem 4rem;
+        width: auto;
+    }
+
+    .Login {
+
+        .header {
+            font-size: 4rem;
+        }
+
+        .content {
+            margin-top: 40px;
+        }
+
+        .button-wrapper {
+            width: 100%;
+        }
+
+        .image--instagram {
+            height: 200px;
+            width: 200px;
+        }
+
+        .image--pinterest {
+            height: 180px;
+            width: 180px;
+        }
+    }
+
+    .HomeFeed {
+
+        .header {
+            font-size: 2rem;
+            height: 330px;
+
+            .logout {
+                font-size: 3rem;
+            }
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .load-more {
+            height: 200px;
+            width: 200px;
+            font-size: 1.5rem;
+        }
+    }
+    .BoardPicker {
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            height: 80%;
+            padding: 40px;
+            width: 95%;
+
+            header {
+                color: #5A5A5A;
+                font-size: 4rem;
+                font-weight: 600;
+                margin-bottom: 25px;
+                min-height: 60px;
+                text-align: left;
+            }
+
+            .close {
+                display: block;
+                position: absolute;
+                right: -10px;
+                top: -30px;
+            }
+
+            .inline {
+                text-align: left;
+                width: 100%;
+
+                &.imageWrapper {
+                    display: flex;
+                    min-height: 200px;
+                }
+            }
+
+            .postImage {
+                height: 200px;
+                width: 200px;
+            }
+
+            .note {
+                box-shadow: none;
+                flex-grow: 1;
+                font-size: 2.2rem;
+                font-weight: 400;
+                height: 200px;
+                padding: 5px 15px;
+            }
+
+            .boards {
+                border-top: 1px solid #ADADAD;
+                box-shadow: none;
+                flex-grow: 1;
+                margin-top: 20px;
+                max-height: none;
+            }
+
+            .board {
+                border-bottom: 1px solid #CACACA;
+                padding: 20px 20px 20px 0;
+
+                img {
+                    height: 90px;
+                    width: 90px;
+                }
+
+                span {
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                    margin-left: 30px;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+}
