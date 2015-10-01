@@ -1,5 +1,4 @@
 var React = require('react');
-var {RouteHandler} = require('react-router');
 
 require('../../scss/App.scss');
 require('../../scss/mobile.scss');
@@ -12,7 +11,7 @@ class App extends React.Component {
      *  Return JSX representation of component view
      */
     render () {
-        return <RouteHandler/>;
+        return (this.props.children);
     }
 }
 
