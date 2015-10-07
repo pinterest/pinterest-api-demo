@@ -44,6 +44,8 @@
         "js-yaml": "latest",
         "node-libs-browser": "latest",
         "webpack": "latest",
-        "webpack-dev-server": "latest"
+        "webpack-dev-server": "latest",
+        "extract-text-webpack-plugin": "latest"
+
     }
 }
