@@ -3,9 +3,9 @@
 
 A client for saving Instagram posts to Pinterest.
 
-View the [demo here](http://pinterest.github.io/pinterest-api-demo/)
+View the [demo here](https://pinterest.github.io/pinterest-api-demo/)
 
-It is really simple to interact with the new developer API by using the [Pinterest Javascript SDK](http://assets.pinterest.com/sdk/sdk.js). It provides shorthands for accessing endpoints, and more importantly, provides one-line solutions for oauth authentication with Pinterest.
+It is really simple to interact with the new developer API by using the [Pinterest Javascript SDK](https://assets.pinterest.com/sdk/sdk.js). It provides shorthands for accessing endpoints, and more importantly, provides one-line solutions for oauth authentication with Pinterest.
 
 ```javascript
 PDK.login({ scope : PIN_SCOPE }, callback);
