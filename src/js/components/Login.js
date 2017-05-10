@@ -21,12 +21,16 @@ class Login extends React.Component {
         this.resetState = this.resetState.bind(this);
     }
 
+    contextTypes : {
+        router: React.PropTypes.func.isRequired
+    }
+
     /*
      *  Reroute if already logged in to both
      */
     componentDidMount() {
         if (this.state.instagram && this.state.pinterest) {
-            this.context.router.transitionTo('feed');
+            this.props.history.pushState(null, "feed");
         }
     }
 
@@ -104,9 +108,5 @@ class Login extends React.Component {
     }
 
 }
-
-Login.contextTypes = {
-    router: React.PropTypes.func.isRequired
-};
 
 module.exports = Login;

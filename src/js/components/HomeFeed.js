@@ -22,12 +22,16 @@ class HomeFeed extends React.Component {
         this.state = { posts: [], boards: [] };
     }
 
+    contextTypes : {
+        router: React.PropTypes.func.isRequired
+    }
+
     /*
      *  Fetch remote data from Instagram and Pinterest
      */
     componentDidMount() {
         if (!Instagram.loggedIn() || !Pinterest.loggedIn()) {
-            return this.context.router.transitionTo('login');
+            return this.props.history.pushState(null, 'login');
         }
         this.fetchFeedData();
         this.fetchBoardData();
@@ -46,7 +50,7 @@ class HomeFeed extends React.Component {
     logout() {
         Pinterest.logout();
         Instagram.logout();
-        this.context.router.transitionTo('login');
+        this.props.history.pushState(null, 'login');
     }
 
     /*
